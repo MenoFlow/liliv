@@ -1,13 +1,17 @@
 .app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
   background-image: url("/boheme.jpeg");
   background-size: cover;
-  /* background-attachment: fixed; */
-  min-height: 100vh;
   color: #4a4a4a;
   font-family: "Georgia", serif;
-  padding: 20px; 
+  padding: 20px;
 }
-
+/* Contenu principal */
+.app-content {
+  flex: 1; /* Prend tout l'espace disponible entre le header et le footer */
+}
 .app h1{
   text-align: center;
   font-size: 60px;
@@ -165,4 +169,40 @@
   left: 5%;
   animation-duration: 7s;
   animation-delay: 5s;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 19px;
+  color: #6c757d;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.social-icons i {
+  margin: 0 0px;
+  font-size: 25px;
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: #007bff;
 }

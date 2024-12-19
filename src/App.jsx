@@ -80,16 +80,16 @@ const App = () => {
       price: 11.99,
       image: "Letranger.jpg",
     },
-    // {
-    //   id: 8,
-    //   genre: "Roman d'aventure",
-    //   title: "Don Quichotte",
-    //   author: "Miguel de Cervantes",
-    //   publicationDate: "1605",
-    //   description: "Les aventures du chevalier errant Don Quichotte et de son fidèle écuyer Sancho Panza.",
-    //   price: 17.99,
-    //   image: "https://example.com/don_quichotte.jpg",
-    // },
+    // // {
+    // //   id: 8,
+    // //   genre: "Roman d'aventure",
+    // //   title: "Don Quichotte",
+    // //   author: "Miguel de Cervantes",
+    // //   publicationDate: "1605",
+    // //   description: "Les aventures du chevalier errant Don Quichotte et de son fidèle écuyer Sancho Panza.",
+    // //   price: 17.99,
+    // //   image: "https://example.com/don_quichotte.jpg",
+    // // },
   ];
   
 
@@ -110,11 +110,11 @@ const App = () => {
     
   };
 
-    return (
-      <div className="app">
-        <div className="background-container">
-        <h1><i className="bi bi-book"></i><br/>Librairie de Poussinette</h1>
-
+  return (
+   <div className="app">
+      <div className="app-content">
+      <div className="background-container">
+        <h1><i className="bi bi-book"></i><br />Librairie de Poussinette</h1>
           <div className="icon-background">
             <span className="icon">📚</span>
             <span className="icon">🌟</span>
@@ -124,11 +124,31 @@ const App = () => {
             <span className="icon">🎵</span>
           </div>
         </div>
-
-        <Filter onFilter={handleFilter}/>
+        <Filter onFilter={handleFilter} />
         <BookSwiper books={filteredBooks} />
       </div>
-    );
+      
+
+      {/* Footer */}
+      <footer className ="footer">
+        <p>© {new Date().getFullYear()}, Hermenio. Tous droits réservés.</p>
+        <div className="social-icons">
+          <a href="https://web.facebook.com/hermenioh.andriantsuh/" target="_blank" rel="noopener noreferrer">
+            <i className="bi bi-facebook"></i>
+          </a>
+          <a href="#" rel="noopener noreferrer">
+            <i className="bi bi-instagram"></i>
+          </a>
+          <a href="#" rel="noopener noreferrer">
+            <i className="bi bi-twitter"></i>
+          </a>
+        </div>
+      </footer>
+      
+    </div>
+  );
+
+
 };
 
 export default App;

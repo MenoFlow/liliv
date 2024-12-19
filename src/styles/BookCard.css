@@ -1,43 +1,63 @@
 .book-card {
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    min-width: 350px;
-    max-width: 350px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  } 
-  .book-card h3 {
-    font-size: 1.2em;
-    color: #6b4f4f;
+  display: flex;
+  flex-direction: column; /* Aligner les éléments verticalement */
+  justify-content: space-between; /* Pousse les éléments vers le haut et le bas */
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  min-width: 350px;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Assure que la carte prend toute la hauteur disponible */
+}
+
+.book-card h3 {
+  font-size: 1.2em;
+  color: #6b4f4f;
+}
+
+.book-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  max-height: 310px;
+  min-height: 310px;
+}
+
+.before-book-actions {
+  margin-top: auto; /* Pousse les actions vers le bas */
+}
+
+.book-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Espacement entre les boutons */
+}
+
+.book-actions button {
+  flex: 1; /* Les boutons prennent la même largeur */
+}
+
+@media (max-width: 496px) {
+  .book-card {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 480px;
+    max-height: 480px;
+    margin-bottom: 15px;
   }
+
   .book-image {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    max-height: 310px;
-    min-height: 310px;
+    max-height: 250px;
+    min-height: 250px;
+    width: 90%;
   }
+
   .book-actions {
-    margin-top: 10px;
-    display: flex;
-    justify-content:space-between;
+    flex-direction: column; /* Empile les boutons verticalement sur les petits écrans */
+    gap: 5px; /* Réduit l'espacement entre les boutons */
   }
-  @media(max-width: 496px){
-    .book-card {
-      min-width: 300px;
-      max-width: 300px;
-
-      min-height: 400px;
-      max-height: 400px;
-      margin-bottom: 15px;
-
-
-    }
-    .book-image {
-      max-height: 250px;
-      min-height: 250px;
-      width: 90%;
-    }
-  }
+}

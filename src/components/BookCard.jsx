@@ -15,19 +15,21 @@ const BookCard = ({ book }) => {
       <div className="justify-content-end">
         <h3>{book.title}</h3>
         <p>Prix: {book.price} €</p>
-        <div className="book-actions">
-            <button
-            className="btn btn-primary"
-            onClick={() => setShowDetailsPopup(!showDetailsPopup)}
-            >
-            Détails
-            </button>
-            <button
-            className="btn btn-success"
-            onClick={() => setShowOrderPopup(true)}
-            >
-            Commander
-            </button>
+        <div className="before-book-actions">
+          <div className="book-actions">
+              <button
+              className="btn btn-primary"
+              onClick={() => setShowDetailsPopup(!showDetailsPopup)}
+              >
+              Détails
+              </button>
+              <button
+              className="btn btn-success"
+              onClick={() => setShowOrderPopup(true)}
+              >
+              Commander
+              </button>
+          </div>
         </div>
       </div>
 
