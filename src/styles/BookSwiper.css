@@ -17,10 +17,6 @@
     width: 350px;
   }
 
-
-  
-
-
   .book-swiper {
   position: relative; /* Nécessaire pour que les boutons soient positionnés par rapport à ce conteneur */
 }

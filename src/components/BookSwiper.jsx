@@ -18,10 +18,10 @@
           modules={[Navigation, Pagination]} // Ajouter les modules nécessaires
           breakpoints={{
             // Paramètres responsive
-            320: { slidesPerView: 1, spaceBetween: 10 }, // Écran très petit (mobile)
-            640: { slidesPerView: 2, spaceBetween: 15 }, // Écran petit (tablette)
-            1024: { slidesPerView: 3, spaceBetween: 20 }, // Écran moyen (desktop)
-            1440: { slidesPerView: 4, spaceBetween: 25 }, // Écran large
+            320: { slidesPerView: 1, spaceBetween: 5 }, // Écran très petit (mobile)
+            800: { slidesPerView: 2, spaceBetween: 5 }, // Écran petit (tablette)
+            1080: { slidesPerView: 3, spaceBetween: 10 }, // Écran moyen (desktop)
+            1150: { slidesPerView: 4, spaceBetween: 10 }, // Écran large
           }}
         >
           {books.map((book, index) => (
