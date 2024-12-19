@@ -1,0 +1,20 @@
+.book-swiper {
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .swiper {
+    padding-bottom: 20px;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  
+  .book-card {
+    width: 350px;
+  }
+
+  

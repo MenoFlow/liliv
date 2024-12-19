@@ -1,0 +1,141 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-content {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 18px;
+    /* display: flex; */
+    max-width: 550px;
+    min-height: 75px;
+    max-height: 75px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    width: 100%; /* S'assure que la largeur est responsive */
+  }
+  
+  .content-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Sépare l'input et le bouton */
+    align-items: center; /* Centre verticalement l'input et le bouton */
+    gap: 10px; /* Ajoute un espace entre les éléments */
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  .content.animate-out {
+    transform: translateX(100%); /* Déplace les contenus vers la droite */
+    opacity: 0; /* Réduit leur opacité */
+  }
+  
+  .content.animate-in {
+    transform: translateX(0); /* Ramène les contenus à leur position d'origine */
+    opacity: 1; /* Réaffiche les contenus */
+  }
+  
+  .input-field {
+    width: 100%; /* L'input occupe toute la largeur disponible */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .input-field:focus {
+    outline: none; /* Supprimer le contour par défaut */
+    border-color: #ccc; /* Changer la couleur de la bordure au focus */
+  }
+  
+  .btn-filter {
+    border-radius: 5%;
+    background-color: grey;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    margin-left: 0px; /* Ajouter un petit espace entre le bouton et l'input */
+    width: 110px;
+    justify-content: flex-end; /* Aligner le texte du bouton à droite */
+  }
+  
+  .btn {
+    font-size: 16px;
+  }
+  @media (max-width: 768px) {
+    .btn-filter {
+      border-radius: 5%;
+      background-color: grey;
+      padding: 10px;
+      color: #fff;
+      border: none;
+      margin-right: 0px;
+      width: 100%; /* Le bouton prend toute la largeur sur les petits écrans */
+      font-size: 14px; /* Réduit la taille du texte */
+      /* margin-top: 10px; Ajoute un espace entre le bouton et l'input */
+    }
+  
+    .filter-content {
+      width: 100%; /* Assure que la largeur est 100% */
+      padding: 10px; /* Ajoute un peu de padding pour un meilleur espacement */
+    }
+  
+    .content-inner {
+      display: flex;
+      justify-content: space-between; /* Assure un espacement égal entre les éléments */
+      flex-direction: row; /* Maintient la disposition horizontale */
+      gap: 10px; /* Ajoute un espace entre les éléments */
+      align-items: center; /* Centre les éléments verticalement */
+    }
+  
+    .input-field {
+      width: 70%; /* L'input prend 70% de la largeur disponible */
+      padding: 8px; /* Réduit un peu le padding pour plus de confort */
+      font-size: 14px; /* Réduit la taille de la police */
+      margin-top: 10px; /* Ajoute un espace entre l'input et le bouton */
+    }
+  
+    .btn-filter {
+      width: 25%; /* Le bouton prend 25% de la largeur disponible */
+      font-size: 14px; /* Réduit la taille du texte */
+      /* margin-top: 10px; Ajoute un espace entre le bouton et l'input */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .filter-content {
+      padding: 10px; /* Réduit le padding pour les petits écrans */
+      max-height: 75px; /* Limite la hauteur de la zone de filtre */
+    }
+  
+    .input-field {
+      font-size: 14px; /* Réduit la taille de la police sur les petits écrans */
+      padding: 8px; /* Ajuste le padding */
+      width: 65%; /* L'input prend 65% de la largeur sur les très petits écrans */
+    }
+  
+    .btn-filter {
+      width: 30%; /* Le bouton prend 30% de la largeur sur les très petits écrans */
+      font-size: 14px; /* Réduit encore la taille de la police */
+      /* margin-top: 10px; */
+    }
+  
+    .content-inner {
+      gap: 5px; /* Réduit l'espace entre les éléments */
+    }
+  
+    .btn {
+      font-size: 16px; /* Assure que les boutons ont une taille de police cohérente */
+    }
+  }
+  

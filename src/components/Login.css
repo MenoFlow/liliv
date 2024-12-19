@@ -1,0 +1,104 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  
+  .login-box {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .login-box h1 {
+    margin-bottom: 1rem;
+    font-size: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #007c89;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .checkbox-group label {
+    margin-left: 0.5rem;
+  }
+  
+  .login-btn {
+    background-color: #007c89;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .login-btn:hover {
+    background-color: #005f6a;
+  }
+  
+  .help-links {
+    margin-top: 1.5rem;
+  }
+  
+  .help-links a {
+    display: block;
+    margin-top: 0.5rem;
+    color: #007c89;
+    text-decoration: none;
+  }
+  
+  .help-links a:hover {
+    text-decoration: underline;
+  }
+  .centered-modal {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    position: fixed; /* Position fixe pour le centrage sur l'écran */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Arrière-plan semi-transparent */
+    z-index: 1000; /* Assurez-vous qu'il est au-dessus d'autres éléments */
+    overflow: hidden; /* Évite le défilement */
+}
