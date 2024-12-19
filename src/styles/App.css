@@ -52,6 +52,7 @@
 @media (max-width: 496px) {
   .app h1{
     color: white;
+    font-size: 45px;
   }
   .app {
       background-image: url("/bohemeMob.jpeg");
@@ -75,9 +76,6 @@
   margin-right: 5px;
 }
 
-
-
-
 /* Style général */
 .background-container {
   position: relative;
@@ -85,9 +83,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f5f5; /* Couleur de fond douce */
+  background-color: rgb(255, 255, 255, 0.6); /* Couleur de fond douce */
   overflow: hidden;
+  padding: 20px;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px black;
 }
 
 .app-p.lead {

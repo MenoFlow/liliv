@@ -112,9 +112,9 @@ const App = () => {
 
     return (
       <div className="app">
-        <h1><i className="bi bi-book"></i><br/>Librairie de Poussinette</h1>
         <div className="background-container">
-          <p className="app-p lead">Une vie au-delà des livres</p>
+        <h1><i className="bi bi-book"></i><br/>Librairie de Poussinette</h1>
+
           <div className="icon-background">
             <span className="icon">📚</span>
             <span className="icon">🌟</span>

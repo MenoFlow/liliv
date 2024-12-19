@@ -1,53 +1,34 @@
-.book-swiper {
-    width: 100%;
-    padding: 20px 0;
+  /* Styles des boutons de navigation */
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Assurez-vous que les boutons sont au-dessus des slides */
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    color: white; /* Couleur des icônes */
+    padding: 10px;
+    /* border-radius: 50%; */
+    /* font-size: 20px; */
   }
-  
-  .swiper {
-    padding-bottom: 20px;
+
+  /* Positionnement du bouton suivant */
+  .swiper-button-next {
+    right: 0px; /* Décalage à droite */
   }
-  
+
+  /* Positionnement du bouton précédent */
+  .swiper-button-prev {
+    left: 0px; /* Décalage à gauche */
+  }
+
+  /* Styles des slides */
   .swiper-slide {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    width: 100%;
+    padding: 20px 0;
+    position: relative; /* Nécessaire pour que les cartes de livres ne soient affectées par le positionnement absolu des boutons */
+    z-index: 1; /* S'assurer que les cartes sont en dessous des boutons */
   }
-  
-  .book-card {
-    width: 350px;
-  }
-
-  .book-swiper {
-  position: relative; /* Nécessaire pour que les boutons soient positionnés par rapport à ce conteneur */
-}
-
-/* Styles des boutons de navigation */
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10; /* Assurez-vous que les boutons sont au-dessus des slides */
-  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
-  color: white; /* Couleur des icônes */
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 20px;
-}
-
-/* Positionnement du bouton suivant */
-.swiper-button-next {
-  right: 10px; /* Décalage à droite */
-}
-
-/* Positionnement du bouton précédent */
-.swiper-button-prev {
-  left: 10px; /* Décalage à gauche */
-}
-
-/* Styles des slides */
-.swiper-slide {
-  position: relative; /* Nécessaire pour que les cartes de livres ne soient affectées par le positionnement absolu des boutons */
-  z-index: 1; /* S'assurer que les cartes sont en dessous des boutons */
-}
 
